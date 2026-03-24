@@ -28,6 +28,7 @@ client.on(Events.MessageCreate, async (message) => {
     const payload = {
       channel_name: message.channel.name,
       message_text: message.content,
+      channel_id: message.channel.id,
       author: message.author.username,
       attachments
     };
